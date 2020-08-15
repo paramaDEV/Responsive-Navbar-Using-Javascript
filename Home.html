@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>ParamaAdmaja</h4>
+        </div>
+            <ul class="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        <span class="hamburger">
+            <img src="humbergerbutton.png">
+        </span>
+    </nav>
+    <script>
+        const button=document.querySelector(".hamburger img");
+        const hiddenbar=document.querySelector("nav ul");
+
+        
+        
+        button.addEventListener("click",function(){
+           hiddenbar.classList.toggle("muncul");
+            button.preventDefault();
+        });
+    </script>
+</body>
+</html>
